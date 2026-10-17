@@ -23,4 +23,7 @@ jobs:
       - name: Printing Custom Message
         run: echo ${{ inputs.custom_message }}
 
-# added a comment to test the workflow dispatch trigger
+      - name: Printing run-job boolean value
+        if: ${{ inputs.run-job == 'true' }}  #added
+        run: echo ${{ inputs.run-job }}  
+    
