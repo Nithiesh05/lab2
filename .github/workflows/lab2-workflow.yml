@@ -22,3 +22,5 @@ jobs:
     steps:
       - name: Printing custom message
         run: echo "${{ inputs.custom_message }}"
+
+# added a comment to test the workflow dispatch trigger
